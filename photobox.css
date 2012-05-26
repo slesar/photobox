@@ -1,0 +1,171 @@
+#jquery-photobox-overlay {
+	display: none;
+	position: fixed;
+	z-index: 997;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: url(back.png);
+}
+.jquery-photobox-inner {
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+}
+.jquery-photobox-close,
+.jquery-photobox-prev,
+.jquery-photobox-next {
+	display: block;
+	position: fixed;
+	width: 272px;
+	height: 100%;
+	top: 0;
+	outline: none;
+}
+.jquery-photobox-close {
+	background: url(close.png) 0 0 no-repeat;
+	width: 40px;
+	height: 38px;
+	right: 30px;
+	z-index: 999;
+}
+	.jquery-photobox-close:hover {
+		background-position: 0 -38px;
+	}
+.jquery-photobox-prev {
+	left: 0;
+}
+	.jquery-photobox-prev:hover {
+		background: url(prev.png) center 45% no-repeat;
+	}
+.jquery-photobox-next {
+	right: 0;
+}
+	.jquery-photobox-next:hover {
+		background: url(next.png) center 45% no-repeat;
+	}
+#jquery-photobox {
+	top: 50%;
+	width: 100px;
+	height: 100px;
+	margin: -105px auto 0;
+	background: url(loading.gif) center center no-repeat #444;
+	position: relative;
+	box-shadow: 0 5px 30px #000;
+	z-index: 998;
+	border: 5px solid #fff;
+}
+	#jquery-photobox img {
+		display: none;
+	}
+.jquery-photobox-thumbline {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #000;
+	z-index: 999;
+}
+.jquery-photobox-title {
+	position: absolute;
+	background: #222;
+	padding: 4px 0 0;
+	height: 22px;
+	margin: -26px 20px 0 40px;
+	font: bold 12px/18px arial, sans-serif;
+	color: #ccc;
+	z-index: 999;
+}
+	.jquery-photobox-title div {
+		float: left;
+		margin: 0 14px;
+	}
+	.jquery-photobox-title strong {
+		font-size: 14px;
+		font-weight: bold;
+		display: block;
+		background: #000;
+		float: left;
+		margin: -4px 0;
+		padding: 4px 14px;
+	}
+.jquery-photobox-current,
+.jquery-photobox-all {
+	font-weight: bold;
+	outline: none;
+}
+.jquery-photobox-current {
+	font-size: 20px;
+	color: #fff;
+}
+.jquery-photobox-scroller {
+	margin: 10px 20px 6px;
+	overflow: hidden;
+}
+#jquery-photobox-thumbs {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	white-space: nowrap;
+}
+	#jquery-photobox-thumbs li {
+		display: inline-block;
+		margin: 0;
+	}
+	#jquery-photobox-thumbs a {
+		background: #333;
+		border: 1px solid #666;
+		margin: 2px;
+		display: block;
+	}
+	#jquery-photobox-thumbs .jquery-photobox-active a {
+		border: 3px solid #fff;
+		margin: 0;
+	}
+		#jquery-photobox-thumbs a:hover {
+			border: 3px solid #3681b8;
+			margin: 0;
+		}
+		#jquery-photobox-thumbs a.jquery-photobox-dot {
+			margin-right: 6px;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+		}
+			#jquery-photobox-thumbs a.jquery-photobox-dot:hover,
+			#jquery-photobox-thumbs .jquery-photobox-active a.jquery-photobox-dot {
+				margin-right: 4px;
+			}
+	#jquery-photobox-thumbs img {
+		display: block;
+	}
+#jquery-photobox-track {
+	height: 10px;
+	background: #333;
+	margin: 0 20px 10px;
+}
+	#jquery-photobox-track div {
+		width: 200px;
+		height: 10px;
+		background: url(scroll.png) left 0 no-repeat #999;
+		cursor: pointer;
+		position: relative;
+	}
+		#jquery-photobox-track div:hover {
+			background: url(scroll.png) left -10px no-repeat #ccc;
+		}
+		#jquery-photobox-track div b {
+			display: block;
+			background: url(scroll.png) right 0 no-repeat;
+			width: 10px;
+			height: 10px;
+			float: right;
+		}
+			#jquery-photobox-track div:hover b {
+				background: url(scroll.png) right -10px no-repeat;
+			}
+.jquery-photobox-hidden {
+	visibility: hidden;
+}
